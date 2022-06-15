@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link src="script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+<div class="calculator">
+    <div class="display"> 
+        <div class="displayNum1" id="display"></div>
+        <div class="displayNum2"></div>
+        <div class="temp-result"></div>
+    </div>
+
+    <div class="console-number">
+        <button class="number seven" id="numbers" onclick="getvalue('7')">7</button>
+        <button class="number eight" id="numbers" onclick="getvalue('8')">8</button>
+        <button class="number nine" id="numbers" onclick="getvalue('9')">9</button>
+        <button class="number four" id="numbers" onclick="getvalue('4')">4</button>
+        <button class="number five" id="numbers" onclick="getvalue('5')">5</button>
+        <button class="number six" id="numbers" onclick="getvalue('6')">6</button>
+        <button class="number one" id="numbers" onclick="getvalue('1')">1</button>
+        <button class="number two" id="numbers" onclick="getvalue('2')">2</button>
+        <button class="number three" id="numbers" onclick="getvalue('3')">3</button>
+        <button class="number point" id="numbers" onclick="getvalue('.')">.</button>
+        <button class="number zero" id="numbers" onclick="getvalue('0')">0</button>
+        <button class="number Del" id="numbers" onclick="del()">Del.</button>
+    </div>
+    <div class="console-mark">
+        <div class="mark plus" id="plus" onclick="getoperator('plus')">+</div>
+        <div class="mark minus" id="minus" onclick="getoperator('minus')">-</div>
+        <div class="mark multiply" id="multipl" onclick="getoperator('multipl')">x</div>
+        <div class="mark divide" id="divide" onclick="getoperator('divide')">÷</div>
+        <div class="mark equalTo" onclick="result('true')">=</div>
+        <div class="mark delall" onclick="delall()">C</div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    border: hidden;
+}
+
+.calculator {
+    margin: 210px auto;
+    width: 560px;
+    height: 363px;
+    background-color: #4b4b4b;
+    display: grid;
+    grid-template-columns: 288px 270px;
+    grid-template-rows: 70px 292px;
+    grid-template-areas:
+    'display display'
+    'console mathematical';
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;
+}
+
+.console-number {
+    grid-area: console;
+    display: grid;
+    grid-template-columns: 85px 85px 85px;
+    grid-template-rows: 61px 61px 61px 61px;
+    grid-template-areas: 
+    'num7 num8 num9' 
+    'num4 num5 num6' 
+    'num1 num2 num3' 
+    'markde num0 markeu';
+    column-gap: 9px;
+    row-gap: 9px;
+    /* background-color: olive; */
+    padding: 10px;
+}
+
+.console-mark {
+    margin: 10px 10px 10px 20px;
+    width: 262px;
+    height: 287px;
+    display: grid;
+    grid-template-columns: 104px 104px;
+    grid-template-rows: 62px 62px 62px;
+    grid-template-areas: 
+    'plus minus' 
+    'multiply divide' 
+    'equalTo equalTo'
+    'delall deall';
+    column-gap: 10px;
+    row-gap: 8px;
+}
+
+.mark {
+    width: 104px;
+    height: 62px;
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #282828;
+    border-radius: 6px;
+}
+
+.mark:hover{
+    background-color: #3b3b3b;
+    border:solid 3px #6b6b6b;
+}
+
+.delall:hover{
+    background-color: #e6e6e6;
+    border:solid 3px #2c2c2ce8;
+}
+
+.active{
+    color: #ffffff !important;
+    background-color: #3ba7ff;
+    border:solid 3px #2644ee;
+}
+
+.active:hover{
+    color: #e1e6ff !important;
+    background-color: #2962df;
+    border:solid 3px #687fff;
+}
+
+.plus {
+    grid-area: plus;
+    padding-top: 8px;
+}
+
+.minus {
+    grid-area: minus;
+    padding-top: 8px;
+}
+
+.multiply {
+    grid-area: multiply;
+    padding-top: 8px;
+}
+
+.divide {
+    grid-area: divide;
+    padding-top: 8px;
+}
+
+.equalTo {
+    grid-area: equalTo;
+    width: 218px;
+    padding-top: 8px;
+}
+
+.delall {
+    grid-area: delall;
+    width: 218px;
+    background-color: #ffc65d;
+    color: #282828;
+    padding-top: 8px;
+}
+
+.number:hover {
+    color: #DDDDDD;
+    background-color: #494949;
+    border: 3px solid #ffffff;
+}
+
+.number {
+    background-color: #ededed;
+    font-size: 40px;
+    font-weight: bold;
+    color: #373737;
+    /* border: 1px solid #000000; */
+    padding: 7px 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: orangered; */
+}
+
+.display {
+    grid-area: display;
+    font-size: 50px;
+    color: #7a7a7a;
+    width: 556px;
+    height: 70px;
+    background-color: #f0f0f0;
+    border-radius: 6px 6px 0 0;
+}
+
+/* .displayNum2 {
+    display: none;
+} */
+
+.displayNum1,.displayNum2 {
+    margin: 5px 10px 0 0;
+    float: right;
+}
+
+.seven{
+    grid-area: num7;
+    border-radius: 6px 0 6px 0;
+}
+.eight{
+    grid-area: num8;
+}
+
+.nine{
+    grid-area: num9;
+    border-radius: 0 6px 0 6px;
+}
+
+.four{
+    grid-area: num4;
+}
+
+.five{
+    grid-area: num5;
+    border-radius: 6px;
+}
+
+.six{
+    grid-area: num6;
+}
+
+.one{
+    grid-area: num1;
+    border-radius: 0 6px 0 6px;
+}
+
+.two{
+    grid-area: num2;
+}
+
+.three{
+    grid-area: num3;
+    border-radius: 6px 0 6px 0;
+}
+
+.point:hover {
+    color: #ffffff;
+    background-color: #ffb987;
+    border: 1.5px solid #834b23;
+    border-radius: 6px;
+}
+
+.point{
+    grid-area: markde;
+    color: #ffffff;
+    background-color: #ff9243;
+    border-radius: 6px;
+}
+
+.zero{
+    grid-area: num0;
+}
+
+.Del:hover {
+    color: #ffffff;
+    border: 1.5px solid #ffffff;
+    background-color: #bdbdbd;
+    border-radius: 6px;
+}
+
+.Del{
+    font-size: 30px;
+    color: #ffffff;
+    padding: px auto;
+    grid-area: markeu;
+    background-color: #282828;
+    border-radius: 6px;
+}
